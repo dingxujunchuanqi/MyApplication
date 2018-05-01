@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/quoe_but"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="打开"
+        android:textSize="18dp" />
+
+    <Button
+       android:layout_alignParentBottom="true"
+        android:id="@+id/system_btn"
+        android:layout_marginBottom="30dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="系统设置"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/swich_btn"
+        android:layout_marginBottom="300dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="系统设置"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/jiequ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="jiequ01"
+        android:text="截取字符串01"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jiequ02"
+            android:text="截取字符串02"/>
+        <Button
+            android:id="@+id/jiequ03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jiequ03"
+            android:text="截取字符串03"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_bg"
+            android:text="水波纹效果"/>-->
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/firstBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:max="100"
+        android:layout_centerInParent="true"
+        android:maxHeight="88dp"
+        android:minHeight="65dp"
+        android:progress="0"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/linearLayout"
+        android:onClick="loadfile"
+        android:text="下载文件" />
+</RelativeLayout>
