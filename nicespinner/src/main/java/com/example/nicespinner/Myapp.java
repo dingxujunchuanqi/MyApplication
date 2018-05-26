@@ -3,6 +3,8 @@ package com.example.nicespinner;
 import android.app.Application;
 import android.util.Config;
 
+import com.example.nicespinner.utils.CollectLog;
+import com.example.nicespinner.utils.CrashHandler;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
@@ -23,6 +25,9 @@ public class Myapp extends Application {
     public void onCreate() {
         super.onCreate();
         initOkGo();
+//      CrashHandler.getInstance(this);
+        CollectLog clog = CollectLog.getInstance();
+        clog.init(this);
     }
 
     private void initOkGo() {
