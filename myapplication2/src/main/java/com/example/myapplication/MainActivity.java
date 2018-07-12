@@ -10,10 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.example.myapplication.activity.GroupLvActivity;
+import com.example.myapplication.activity.PendingActivity;
 import com.example.myapplication.utils.AsyncTaskUtils;
 
 /**
  * 1.分组的listView 及条目点击事件及条目子控件点击事件
+ *
+ * 2.PendingIntent 的使用
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -130,6 +133,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent =new Intent(this, GroupLvActivity.class);
         startActivity(intent);
 
+    }
+
+    /**
+     * PendingIntent 的使用
+     * @param view
+     */
+    public void pendingIntent(View view){
+        Intent intent =new Intent(this,PendingActivity.class);
+        startActivity(intent);
     }
 }
 

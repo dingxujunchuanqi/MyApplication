@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="new_pictures_title">通知栏来了</string>
+    <string name="new_pictures_text">恭喜你获得一等奖</string>
 </resources>

@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.Window;
 
 /**
@@ -26,6 +27,12 @@ public class AssetsLoadingDialog {
     public void showLoadingDialog(String title) {
         dialogProgress.setTitle(title);
         dialogProgress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        dialogProgress.setButton(ProgressDialog.BUTTON_NEGATIVE, "取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialogProgress.dismiss();
+            }
+        });
         dialogProgress.show();
     }
 

@@ -21,6 +21,8 @@
         <activity android:name=".DialogActivity"></activity>
         <activity android:name=".CardViewActivity"/>
         <activity android:name=".activity.GroupLvActivity"/>
+        <activity android:name=".activity.PendingActivity"/>
+        <activity android:name=".activity.DetailActivity"/>
     </application>
 
 </manifest>

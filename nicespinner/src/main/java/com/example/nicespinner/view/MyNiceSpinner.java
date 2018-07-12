@@ -2,6 +2,7 @@ package com.example.nicespinner.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.Gravity;
 
 
